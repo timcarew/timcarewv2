@@ -4,4 +4,56 @@
   padding: 1rem;
   text-align: center;
   background-image: linear-gradient(to top right, #5b0643, #e65618);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.App-name {
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.App-name-text {
+  background-color: rgb(49, 9, 37);
+  opacity: 0.4;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 35%;
+  transition: all 0.5s ease;
+}
+
+.App-name-text:hover {
+  width: 90%;
+  opacity: 1;
+}
+
+.App-name-text-h2 {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 1;
+}
+
+.App-name-text:hover > .App-name-text-h2 {
+  visibility: visible;
+  animation: .5s fade-text;
+}
+
+.App-links {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+@keyframes fade-text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

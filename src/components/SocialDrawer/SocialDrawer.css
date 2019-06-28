@@ -1,0 +1,30 @@
+.SocialDrawer {
+  padding: 1rem;
+  color: rgba(0,0,0,0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  opacity: 0.4;
+  padding: 3rem;
+}
+
+.SocialDrawer:hover {
+  opacity: 1;
+}
+
+
+.SocialDrawer-link {
+  padding: 1rem;
+  width: 100px;
+  background-color: rgb(49, 9, 37);
+  border-radius: 5px;
+  margin-left: -100px;
+  transition: all 0.5s ease;
+}
+
+.SocialDrawer:hover > .SocialDrawer-link {
+  color: rgba(255,255,255, 0.7);
+  margin-left: 0;
+  margin: 0 1rem;
+}
