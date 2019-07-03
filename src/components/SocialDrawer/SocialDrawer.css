@@ -13,6 +13,10 @@
   opacity: 1;
 }
 
+.SocialDrawer > a {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
 
 .SocialDrawer-link {
   padding: 1rem;
@@ -23,8 +27,19 @@
   transition: all 0.5s ease;
 }
 
+.SocialDrawer-link:hover {
+  color: white;
+}
+
 .SocialDrawer:hover > .SocialDrawer-link {
-  color: rgba(255,255,255, 0.7);
   margin-left: 0;
   margin: 0 1rem;
+}
+
+.SocialDrawer:hover #SocialDrawer-link-dynamic::after {
+  content: "GitHub";
+}
+
+.SocialDrawer:hover span {
+  display: none;
 }
