@@ -20,7 +20,6 @@ class App extends Component {
   typeMessage = debounce((message) => {
     // erase old message
     this.setState({ message: ""});
-
     // type new one
     let interval = setInterval(() => {
       // get first character
@@ -36,7 +35,7 @@ class App extends Component {
         this.setState({ message: messageToType });
         clearInterval(interval);
       }
-    }, 50);
+    }, 25);
   }, 1000, true);
 
   render() {
