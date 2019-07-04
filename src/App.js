@@ -36,7 +36,28 @@ class App extends Component {
         clearInterval(interval);
       }
     }, 25);
-  }, 1000, true);
+  }, 750, true);
+
+  typeMessageSocials = debounce((message) => {
+    // erase old message
+    this.setState({ message: "" });
+    // type new one
+    let interval = setInterval(() => {
+      // get first character
+      let characterToAdd = message.slice(0, 1);
+      // pop first character
+      message = message.substr(1, message.length);
+      if (message) {
+        let messageToType = this.state.message + characterToAdd;
+        this.setState({ message: messageToType });
+      }
+      else {
+        let messageToType = this.state.message + characterToAdd;
+        this.setState({ message: messageToType });
+        clearInterval(interval);
+      }
+    }, 10);
+  }, 500, false);
 
   render() {
     return (
@@ -56,7 +77,7 @@ class App extends Component {
             <h2 onMouseEnter={() => this.typeMessage("cd ./projects")} onClick={() => this.changePage("projects")} className="App-Computer-link App-Computer-projects">Projects</h2>
           </div>
           <div className="App-links">
-            <SocialDrawer typeMessage={this.typeMessage}/>
+            <SocialDrawer typeMessage={this.typeMessageSocials}/>
           </div>
         </div>
         
