@@ -1,4 +1,4 @@
-.App {
+.App-Main {
   height: 100%;
   min-height: 100vh;
   padding: 1rem;
@@ -29,6 +29,28 @@
 .App-name-text-h2 {
   color: rgba(255,255,255,0.7);
   font-size: 1rem;
+}
+
+.App-Computer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.App-Computer-link {
+  background-color: rgb(49,9,37);
+  padding: 1rem;
+  width: 40%;
+  opacity: 0.8;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.7);
+  transition: all 0.5s ease;
+}
+
+.App-Computer-link:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .App-links {
