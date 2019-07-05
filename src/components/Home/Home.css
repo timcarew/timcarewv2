@@ -1,0 +1,60 @@
+.Home-Main {
+  height: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  background-image: linear-gradient(to top right, #5b0643, #e65618);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Home-name {
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.Home-name-text {
+  background-color: rgb(49, 9, 37);
+  padding: 1rem;
+  opacity: 0.4;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.Home-name-text:hover {
+  opacity: 1;
+}
+
+.Home-name-text-h2 {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+}
+
+.Home-Computer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.Home-Computer-link {
+  background-color: rgb(49,9,37);
+  padding: 1rem;
+  width: 40%;
+  opacity: 0.8;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.7);
+  transition: all 0.5s ease;
+}
+
+.Home-Computer-link:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.Home-links {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
