@@ -65,9 +65,9 @@ class Home extends Component {
             </div>
           </div>
           <div className="Home-Computer">
-            <h2 onMouseEnter={() => this.typeMessage("cd ./about")} onClick={() => this.props.changePage("about")} className="Home-Computer-link Home-Computer-about">About Me</h2>
+            {/* <h2 onMouseEnter={() => this.typeMessage("cd ./about")} onClick={() => this.props.changePage("about")} className="Home-Computer-link Home-Computer-about">About Me</h2> */}
             <Computer message={this.state.message} />
-            <h2 onMouseEnter={() => this.typeMessage("cd ./projects")} onClick={() => this.props.changePage("projects")} className="Home-Computer-link Home-Computer-projects">Projects</h2>
+            {/* <h2 onMouseEnter={() => this.typeMessage("cd ./projects")} onClick={() => this.props.changePage("projects")} className="Home-Computer-link Home-Computer-projects">Projects</h2> */}
           </div>
           <div className="Home-links">
             <SocialDrawer typeMessage={this.typeMessageSocials} />

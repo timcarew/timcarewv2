@@ -28,7 +28,6 @@ class App extends Component {
           <Projects changePage={this.changePage}/>
         : 
         false
-        // apparently
       }
       </div>
     );

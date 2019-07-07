@@ -36,6 +36,10 @@
   margin: 0 1rem;
 }
 
+.SocialDrawer-link-static {
+  color: white;
+}
+
 .SocialDrawer:hover > .SocialDrawer-link-static {
   color: transparent;
   opacity: 0.1;
